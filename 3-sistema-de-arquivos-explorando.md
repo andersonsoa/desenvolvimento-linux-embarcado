@@ -33,3 +33,72 @@ cat /etc/shells
 cat /etc/timezone
 ```
 ![image](https://user-images.githubusercontent.com/19675356/207754161-a89e6620-fd20-4ffc-ae70-bba7445fe3b9.png)
+
+```bash
+ls -alh ~
+```
+![image](https://user-images.githubusercontent.com/19675356/207979954-df9b6a6e-bbe9-44bd-a344-12eaed0b467b.png)
+
+### 3.2. Explorando o /dev, /proc e /sys
+
+```bash
+cat /dev/random
+```
+![image](https://user-images.githubusercontent.com/19675356/207980233-b0b5a534-37f6-4e05-9c6e-1cfbf7eea047.png)
+
+```bash
+echo $RANDOM
+echo $RANDOM
+echo $RANDOM
+echo $RANDOM
+```
+![image](https://user-images.githubusercontent.com/19675356/207980706-51f08068-8f0e-4514-a250-a2be8751d95e.png)
+
+```bash
+echo "Timber Hearth" > /tmp/OuterWilds.txt
+cat /tmp/OuterWilds.txt > /dev/stdout
+```
+![image](https://user-images.githubusercontent.com/19675356/207981504-e1fbf31f-1d1a-4a0d-8cb8-7a2f6b302fdc.png)
+
+```bash
+cat /proc/diskstats | grep -v loop
+```
+![image](https://user-images.githubusercontent.com/19675356/207981659-24d2949b-ca68-4745-9499-e21b3d3be45b.png)
+
+```bash
+iostat | grep -v loop
+```
+TODO
+
+
+```bash
+cat /sys/block/<DEVICE>/queue/hw_sector_size
+```
+TODO
+
+
+```bash
+cat /proc/cmdline
+```
+![image](https://user-images.githubusercontent.com/19675356/207982185-42edca88-bcac-4d74-bfed-2816c4b9c51a.png)
+
+
+```bash
+cat /proc/loadavg
+```
+![image](https://user-images.githubusercontent.com/19675356/207982290-9ef85598-6601-4138-be9c-93892396becb.png)
+
+```bash
+cat /proc/meminfo | grep Mem
+```
+![image](https://user-images.githubusercontent.com/19675356/207982441-1b34e54b-b4c3-4559-be75-f7377b862be1.png)
+
+```bash
+cat /proc/uptime
+```
+![image](https://user-images.githubusercontent.com/19675356/207982546-8660eee6-e189-42c8-bdf2-3eb6aa85d27e.png)
+
+```bash
+cat /proc/version
+```
+![image](https://user-images.githubusercontent.com/19675356/207982601-e6860ace-855b-41cf-9eea-a6c0a6f4b4d0.png)
