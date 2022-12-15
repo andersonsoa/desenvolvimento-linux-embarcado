@@ -68,14 +68,12 @@ cat /proc/diskstats | grep -v loop
 ```bash
 iostat | grep -v loop
 ```
-TODO
-
+![image](https://user-images.githubusercontent.com/19675356/207987866-e5013fe2-e4fd-48fd-bd77-d82ac2ecbbbc.png)
 
 ```bash
-cat /sys/block/<DEVICE>/queue/hw_sector_size
+cat /sys/block/sda/queue/hw_sector_size
 ```
-TODO
-
+![image](https://user-images.githubusercontent.com/19675356/207987804-645a3851-ac51-46dd-98a1-f960fcf2aa5a.png)
 
 ```bash
 cat /proc/cmdline
@@ -102,3 +100,56 @@ cat /proc/uptime
 cat /proc/version
 ```
 ![image](https://user-images.githubusercontent.com/19675356/207982601-e6860ace-855b-41cf-9eea-a6c0a6f4b4d0.png)
+
+### 3.3. Explorando o /bin e /sbin
+
+```bash
+hexdump -C /bin/ls | head -3
+```
+![image](https://user-images.githubusercontent.com/19675356/207988141-b67118d6-58b3-44b7-815b-556a23097dd2.png)
+
+```bash
+cd /bin
+ls
+```
+![image](https://user-images.githubusercontent.com/19675356/207988374-7ed26aa0-4525-4c47-a6f9-1abccce81e0b.png)
+
+
+```bash
+bash
+cd /tmp
+exit
+```
+![image](https://user-images.githubusercontent.com/19675356/207988515-b76e55a9-f9fa-483b-a11c-9357aa0a1a90.png)
+
+```bash
+/bin/date
+```
+![image](https://user-images.githubusercontent.com/19675356/207988636-64bced3f-6afb-46fd-a323-7331add9b4be.png)
+
+```bash
+echo $PATH
+```
+![image](https://user-images.githubusercontent.com/19675356/207988733-057c5288-1bfb-4bd2-be8a-8bdb43454eac.png)
+
+```bash
+df -h
+```
+![image](https://user-images.githubusercontent.com/19675356/207988797-6dddd06e-8255-41e5-9c38-c30803bf6cc5.png)
+
+```bash
+touch /tmp/ArquivoTouch.txt
+ls -lh /tmp/ArquivoTouch.txt
+```
+![image](https://user-images.githubusercontent.com/19675356/207988980-3b1ed867-4889-46a5-867b-b411e63fbef6.png)
+
+```bash
+uname -a
+```
+![image](https://user-images.githubusercontent.com/19675356/207989066-ca8357b9-4198-4185-a223-8a54dd3aed3d.png)
+
+
+```bash
+who
+```
+![image](https://user-images.githubusercontent.com/19675356/207989134-9145d08a-facb-4219-b1dc-65749fdb6347.png)
