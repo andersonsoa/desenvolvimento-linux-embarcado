@@ -39,3 +39,37 @@ top
 top -o %MEM
 ```
 ![image](https://user-images.githubusercontent.com/19675356/208748875-1ed4fa10-9297-4c48-97fa-a8d3ebbf848d.png)
+
+### 5.2. Matando um Processo
+
+```bash
+ps | grep cat | xargs | cut -d" " -f1
+```
+![image](https://user-images.githubusercontent.com/19675356/208749309-f4c016e1-6a12-4008-adfd-06c677be81cc.png)
+
+```bash
+kill 6353
+ps | grep cat
+```
+![image](https://user-images.githubusercontent.com/19675356/208749523-86f259e6-8d0a-44af-b654-5411f21f8537.png)
+
+```bash
+kill -9 6353
+ps | grep cat
+```
+![image](https://user-images.githubusercontent.com/19675356/208750086-9c8f5fbf-4453-4cdf-b839-d4d2cf7c0a25.png)
+
+```bash
+cat &
+cat &
+cat &
+ps | grep cat
+```
+![image](https://user-images.githubusercontent.com/19675356/208750286-2e5d83c4-0923-4da4-ac27-f4a1c20c433c.png)
+
+```bash
+killall -9 cat
+ps | grep cat
+```
+![image](https://user-images.githubusercontent.com/19675356/208750468-4850ae5a-5940-4852-8ed6-66bc84613eed.png)
+
