@@ -121,17 +121,59 @@ echo 'echo "Hello Bash"' >> helloBash.sh
 ![image](https://user-images.githubusercontent.com/19675356/208798130-61a31186-c70d-4b47-a5e9-955d26bc67ee.png)
 
 ```bash
-
+cat helloBash.sh
 ```
+![image](https://user-images.githubusercontent.com/19675356/208798237-8a7c4e67-6db3-4803-b382-891a18abc0b2.png)
 
 ```bash
-
+ls -l helloBash.sh
 ```
+![image](https://user-images.githubusercontent.com/19675356/208798297-dda482e5-329e-410e-a8d9-dcbbd3b77e77.png)
 
 ```bash
-
+./helloBash.sh
 ```
+![image](https://user-images.githubusercontent.com/19675356/208798338-dd37ba79-35c2-4909-937b-a904d6872bdd.png)
 
 ```bash
-
+chmod u+x helloBash.sh
 ```
+![image](https://user-images.githubusercontent.com/19675356/208798442-1b42b129-aa27-43e0-8c14-4538d5b26437.png)
+
+```bash
+ls -l helloBash.sh
+```
+![image](https://user-images.githubusercontent.com/19675356/208798493-5c704c15-dd85-49fe-9f06-bcc1b3ce57c4.png)
+
+```bash
+./helloBash.sh
+```
+![image](https://user-images.githubusercontent.com/19675356/208798554-d2cc4ec6-d801-4e8c-bac1-4330ae9a19bf.png)
+
+```bash
+chmod 700 helloBash.sh
+ls -l helloBash.sh
+```
+![image](https://user-images.githubusercontent.com/19675356/208798776-3310c76c-1abc-4718-8e42-b274b05638c0.png)
+
+```bash
+chmod 755 helloBash.sh
+ls -l helloBash.s
+```
+![image](https://user-images.githubusercontent.com/19675356/208798902-8a454f61-87e6-41d2-b4d8-e3ef1d226a9b.png)
+
+### 6.5. Mudando o Dono e o Grupo de um Arquivo
+
+```bash
+ls -l helloBash.sh
+sudo chgrp palomakoba-lab6 helloBash.sh
+ls -l helloBash.sh
+```
+![image](https://user-images.githubusercontent.com/19675356/208799260-b976ac5c-0305-4144-aee8-0ad6dc43aabe.png)
+
+### 6.6. Executando Comandos como Root
+
+```bash
+sudo cat /etc/sudoers
+```
+![image](https://user-images.githubusercontent.com/19675356/208799441-ebe3000f-8e44-4891-b0c2-f0c321f6e0ef.png)
