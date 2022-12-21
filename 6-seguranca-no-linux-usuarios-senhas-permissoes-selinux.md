@@ -1,4 +1,4 @@
-# desenvolvimento-linux-embarcado
+# Desenvolvimento Linux Embarcado
 
 ## 6. Segurança no Linux, Usuários, Senhas, Permissões, SELinux
 
