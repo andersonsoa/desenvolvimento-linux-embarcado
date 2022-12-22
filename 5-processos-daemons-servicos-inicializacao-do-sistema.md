@@ -8,6 +8,7 @@
 ps
 ```
 ![image](https://user-images.githubusercontent.com/19675356/208747884-735acd51-972e-461d-a6f0-07704c5db0d2.png)
+echo "Bash iniciado!"
 
 ```bash
 cat &
@@ -73,3 +74,47 @@ ps | grep cat
 ```
 ![image](https://user-images.githubusercontent.com/19675356/208750468-4850ae5a-5940-4852-8ed6-66bc84613eed.png)
 
+### 5.3. Verificando a Memória Livre no Sistema
+
+```bash
+free
+```
+![image](https://user-images.githubusercontent.com/19675356/209025968-932348e9-7295-44df-9314-8af1bc647b7a.png)
+
+```bash
+free -h
+```
+![image](https://user-images.githubusercontent.com/19675356/209025996-1e7d812a-fb3e-46ff-817a-a70e3573b7dc.png)
+
+### 5.4. Daemons do Linux
+
+```bash
+ps -ef | grep -v grep | grep "systemd-udevd\|systemd-resolved\|systemd-timesync\|systemd-logind\|cron\|atd\|thermald\|acpid\|cupsd\|Xorg"
+```
+![image](https://user-images.githubusercontent.com/19675356/209026171-85edc0fc-deaf-4b06-b3dd-425df280bcec.png)
+
+### 5.5. Inicialização do Init pelo Kernel
+
+```bash
+cat /proc/cmdline
+```
+![image](https://user-images.githubusercontent.com/19675356/209026339-b311c980-256d-4ae0-b438-a918fc3da90f.png)
+
+```bash
+ls -fd /sbin/init /etc/init /bin/init
+```
+![image](https://user-images.githubusercontent.com/19675356/209026392-a3691b40-31ef-4b16-9d35-370f909d183d.png)
+
+### 5.6. O Init e o Systemd
+
+```bash
+ls -lh /sbin/init
+```
+![image](https://user-images.githubusercontent.com/19675356/209026514-b5469671-5031-4107-b841-6a2152831976.png)
+
+```bash
+ls /lib/systemd/systemd
+```
+![image](https://user-images.githubusercontent.com/19675356/209026577-ef1aa653-5394-4e9f-b996-18d559f02b26.png)
+
+```bash
