@@ -5,11 +5,20 @@ mais comuns. Exemplo: * ls função: serve para listar os arquivos do diretório
 corrente uso mais comum: $ ls -la, que lista todos os arquivos do diretório
 corrente, incluindo arquivos ocultos, se houver, no formato de lista.
 
-- cal 
-- date
-- clear
-- exit
-- uname
+* cal 
+  - Exibe um calendário simples no terminal, por padrão ele exibe o mes atual, ao utilizando o argumento '-y' é exibido na tela o calendário do ano inteiro Ex: cal -y  
+
+* date
+  - Exibe a data atual no terminal do usuário, é possivel tambem setar a data do computador e formatar a saida. Para alterar a data do sistema utiliza-se o argumento --set Ex: date --set="<DATA_VALIDA>"
+
+* clear
+  - Serve para limpar o terminal e exclui o buffer atual fazendo com que seja impossivel rolar a tela para cima e ver os comandos digitados anteriormente, para preservar o buffer utiliza-se o argumento '-x' Ex: clear -x
+
+* exit
+  - Exit encerra o bash que esta rodando atualmente, é possivel passar um argumento que é retornado quando o fechamento do bash e concluído, esse retorno e tratado como o código referente ao fechamento. Ex: exit 110 (110 sera retornado para o programa que executou esse bash) 
+
+* uname
+  - Exibe o nome da sua distribuição linux, porem é possivel passar varios argumentos para exibir informações adicionais, como o argumento -a que exibe todas as informações do sistema. Ex: uname -a
 
 ---
 2. Usando o comando adequado:
